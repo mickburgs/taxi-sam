@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link type="text/css" href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+            <link type="text/css" href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+            <link type="text/css" href="{{ asset('bundles/app/css/style.css') }}" rel="stylesheet">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {% include 'AppBundle:menu:menu.html.twig' %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('assets/js/jquery.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('assets/js/bootstrap.js') }}"></script>
+        {% endblock %}
     </body>
 </html>

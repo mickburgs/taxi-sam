@@ -1,4 +1,4 @@
 .idea*
-var/cache
-var/logs
-var/sessions
+var/cache/*
+var/logs/*
+var/sessions/*
