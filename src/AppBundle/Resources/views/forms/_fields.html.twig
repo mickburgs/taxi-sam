@@ -1,0 +1,21 @@
+{% extends 'form_div_layout.html.twig' %}
+
+{%- block form_row -%}
+    <div class="form-group">
+        {% if attr.date is defined and attr.date == true %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        {{- form_label(form) -}}
+                        {{- form_widget(form,{ 'id': 'datetimepicker',  'attr': { 'class' : 'form-control' }}) -}}
+                        {{- form_errors(form) -}}
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            {{- form_label(form) -}}
+            {{- form_widget(form) -}}
+            {{- form_errors(form) -}}
+        {% endif %}
+    </div>
+{%- endblock form_row -%}

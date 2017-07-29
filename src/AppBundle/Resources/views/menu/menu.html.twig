@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,33 +8,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{ 'title.taxi_flevo'|trans }}</a>
+            <a class="navbar-brand" href="/"><img class="" src="{{ asset('bundles/app/images/logo.svg') }}" alt="logo"><span class="nav-text brand">Service Taxi Flevoland</span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="{{ path('contact') }}"><span class="nav-text">{{ 'menu.contact'|trans }}</span></a></li>
+                <li><a href="#"><span class="nav-text">Link</span></a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="nav-text">Dropdown</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#"><span class="nav-text">Another action</span></a></li>
+                        <li><a href="#"><span class="nav-text">Something else here</span></a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#"><span class="nav-text">Separated link</span></a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#"><span class="nav-text">One more separated link</span></a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="nav-text">{{ 'menu.lang'|trans }} </span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Dutch</a></li>
-                        <li><a href="#">English</a></li>
+                        <li><a href="{{ path('language', {'lang': 'nl'}) }}"><span class="nav-text">{{ 'menu.lang.nl'|trans }}</span></a></li>
+                        <li><a href="{{ path('language', {'lang': 'en'}) }}"><span class="nav-text">{{ 'menu.lang.en'|trans }}</span></a></li>
                     </ul>
                 </li>
             </ul>

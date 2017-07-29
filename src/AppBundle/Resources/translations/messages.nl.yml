@@ -1,3 +1,19 @@
 # TRANSLATIONS MESSAGES NL
 
-title.taxi_flevo: Service taxi Flevoland
+menu.contact: Contact
+menu.lang: Taal
+menu.lang.nl: Nederlands
+menu.lang.en: Engels
+
+make_appointment: Afspraak maken
+make_appointment_success: Uw aanvraag is succesvol verzonden
+make_appointment_error: Fout bij het versturen van uw aanvraag
+
+form.name: Uw naam
+form.phone: Uw telefoonnummer
+form.email: Uw email
+form.date: Datum en tijdstip
+form.pickup_location: Ophaal locatie
+form.drop_location: Afzet locatie
+form.description: Beschrijving
+form.submit: Verzenden

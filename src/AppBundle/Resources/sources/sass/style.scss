@@ -1,3 +1,72 @@
-body {
-  font-size: 18px;
+$green: #008D88;
+
+label, h1 {
+  color: $green;
+}
+
+.btn-green {
+  color: white;
+  background-color: $green;
+}
+
+.navbar-default {
+  margin-bottom: 0 !important;
+
+  .nav-text {
+    color: $green;
+  }
+
+  .navbar-brand {
+    img {
+      width: 22px;
+      position: absolute;
+      top: 8px;
+    }
+    .brand {
+      padding-left: 35px;
+    }
+  }
+}
+
+.carousel-inner {
+  max-height: 300px;
+
+  .item {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.body-container {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.phone-link-container {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+
+  a, a:hover, a:visited, a:link, a:active {
+    color: $green;
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 100% !important;
+  .row {
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .phone-link-container {
+    font-size: 30px;
+  }
 }
