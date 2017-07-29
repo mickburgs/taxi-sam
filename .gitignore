@@ -1,5 +1,7 @@
 .idea*
 .htaccess
+npm-debug.log
+/var/bootstrap.php.cache
 /var/cache/*
 /var/logs/
 /var/sessions/
