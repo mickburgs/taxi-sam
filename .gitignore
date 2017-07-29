@@ -1,16 +1,8 @@
 .idea*
 .htaccess
-/var/
-!/var/cache
-/var/cache/
-!var/cache/.gitkeep
-!/var/logs
+/var/cache/*
 /var/logs/
-!var/logs/.gitkeep
-!/var/sessions
 /var/sessions/
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
 /web/assets/
