@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-composer install --no-dev --optimize-autoloader
+SYMFONY_ENV=prod composer install --no-dev --optimize-autoloader
 php bin/console cache:clear --env=prod --no-warmup
 php bin/console cache:warmup --env=prod
 
