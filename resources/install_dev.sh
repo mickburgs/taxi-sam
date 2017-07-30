@@ -7,3 +7,4 @@ bower install
 grunt init
 grunt build
 php bin/console assets:install --symlink
+php bin/console cache:clear --env=dev --no-warmup
