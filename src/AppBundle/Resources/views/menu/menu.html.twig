@@ -8,7 +8,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img class="" src="{{ asset('bundles/app/images/logo.svg') }}" alt="logo"><span class="nav-text brand">Service Taxi Flevoland</span></a>
+            <a class="navbar-brand" href="/">
+                {% image '@AppBundle/Resources/public/images/logo.svg' %}
+                    <img class="" src="{{ asset_url }}" alt="logo">
+                {% endimage %}
+                <span class="nav-text brand">Service Taxi Flevoland</span>
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Service Taxi Flevoland{% endblock %}</title>
-        {% block stylesheets %}
-            <link type="text/css" href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
-            <link type="text/css" href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
-            <link type="text/css" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
-            <link type="text/css" href="{{ asset('bundles/app/css/style.css') }}" rel="stylesheet">
-        {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% stylesheets
+        '@AppBundle/Resources/public/vendor/bootstrap/dist/css/bootstrap.css'
+        '@AppBundle/Resources/public/vendor/components-font-awesome/css/font-awesome.css'
+        '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css'
+        '@AppBundle/Resources/public/css/style.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        {% image '@AppBundle/Resources/public/images/favicon.ico' %}
+        <link rel="icon" type="image/x-icon" href="{{ asset_url }}" />
+        {% endimage %}
     </head>
     <body>
         {% include 'AppBundle:menu:menu.html.twig' %}
@@ -20,10 +23,13 @@
             {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
-            <script type="text/javascript" src="{{ asset('assets/js/jquery.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('assets/js/bootstrap.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('assets/js/moment.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
+            {% javascripts
+            '@AppBundle/Resources/public/vendor/jquery/dist/jquery.js'
+            '@AppBundle/Resources/public/vendor/bootstrap/dist/js/bootstrap.js'
+            '@AppBundle/Resources/public/vendor/moment/min/moment-with-locales.js'
+            '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'%}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock %}
         <script type="text/javascript">
           $(function () {
