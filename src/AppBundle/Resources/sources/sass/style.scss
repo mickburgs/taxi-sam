@@ -1,19 +1,32 @@
 $green: #008D88;
+$blue: #3694DE;
+$blue-alt: #5eabe8;
+$blue-dark: #303744;
+$blue-light: #83dbff;
+$white: white;
+$black: black;
 
-label, h1 {
-  color: $green;
+body {
+  background-color: $blue-dark;
 }
 
-.btn-green {
-  color: white;
-  background-color: $green;
+label, h1 {
+  color: $blue;
+}
+
+.btn-default {
+  color: $white;
+  background-color: $blue;
+  border-color: $black;
 }
 
 .navbar-default {
+  background: $blue;
+  border-color: $blue;
   margin-bottom: 0 !important;
 
   .nav-text {
-    color: $green;
+    color: $white;
   }
 
   .navbar-brand {
@@ -22,8 +35,44 @@ label, h1 {
       position: absolute;
       top: 8px;
     }
-    .brand {
-      padding-left: 35px;
+  }
+
+  .navbar-toggle {
+    background-color: $white;
+
+    .icon-bar {
+      background-color: $blue;
+    }
+  }
+
+  .dropdown {
+    &.open {
+      a:focus, a:active, a:hover{
+        background-color: $blue-alt;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    .flag {
+      margin-left: 5px;
+      width: 25px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $blue;
+
+    a:hover, a:active{
+      background-color: $blue-alt;
+    }
+
+    .nav-text {
+      color: $white;
+    }
+
+    .flag {
+      width: 15px;
     }
   }
 }
@@ -39,7 +88,8 @@ label, h1 {
 }
 
 .body-container {
-  max-width: 1000px;
+  color: $white;
+  max-width: 1005px;
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -51,8 +101,38 @@ label, h1 {
   font-size: 40px;
 
   a, a:hover, a:visited, a:link, a:active {
-    color: $green;
+    color: $blue;
     text-decoration: none;
+  }
+}
+
+.main-text {
+  margin-bottom: 30px;
+}
+
+.main-text-block {
+  margin-bottom: 20px;
+  .icon-wrapper {
+    color: $blue-dark;
+    border-radius: 100%;
+    border: solid $blue 5px;
+    padding: 8px;
+    background: $blue;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    .icon {
+      font-size: 20px;
+    }
+  }
+  .text {
+    h2 {
+      color: $blue;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
   }
 }
 

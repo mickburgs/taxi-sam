@@ -90,7 +90,7 @@ class AppointmentForm extends AbstractType
                 'label' => 'form.submit',
                 'attr' => array(
                     'placeholder' => 'form.drop_location',
-                    'class' => 'btn btn-default btn-green'
+                    'class' => 'btn btn-default'
                 ),
             ));
     }

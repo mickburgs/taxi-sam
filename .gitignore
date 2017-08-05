@@ -7,3 +7,7 @@ npm-debug.log
 /var/sessions/
 /vendor/
 /web/bundles/
+/web/css
+/web/fonts
+/web/images
+/web/js
