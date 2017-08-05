@@ -18,6 +18,12 @@ class DefaultController extends Controller
     {
         $sendForm = false;
         $formError = false;
+        $lang = 'nl';
+
+        $session = $this->get('session');
+        if ($session->has('lang') && !empty($session->get('lang'))) {
+            $lang = $session->get('lang');
+        }
 
         $form = $this->createForm(AppointmentForm::class);
         if ($request->isMethod('POST')) {
@@ -39,6 +45,7 @@ class DefaultController extends Controller
             'carousel' => true,
             'sendForm' => $sendForm,
             'formError' => $formError,
+            'lang' => $lang,
             'form' => $form->createView(),
         ]);
     }
