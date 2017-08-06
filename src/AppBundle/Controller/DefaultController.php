@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Form\AppointmentForm;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Translation\Translator;
@@ -33,6 +34,8 @@ class DefaultController extends Controller
 
                 if ($form->isValid()) {
                     $sendForm = true;
+                    $this->sendAppointmentFormMail($form);
+
                 } else {
                     $formError = true;
                 }
@@ -78,6 +81,9 @@ class DefaultController extends Controller
         ]);
     }
 
+    /**
+     * @param $lang
+     */
     private function setLang($lang)
     {
         /** @var Session $session */
@@ -87,6 +93,9 @@ class DefaultController extends Controller
         }
     }
 
+    /**
+     *
+     */
     private function getLang()
     {
         /** @var Session $session */
@@ -101,8 +110,42 @@ class DefaultController extends Controller
         }
     }
 
+    /**
+     * @return array
+     */
     private function getLangConfig()
     {
         return ['en', 'nl'];
+    }
+
+    /**
+     * @param Form $form
+     */
+    private function sendAppointmentFormMail(Form $form)
+    {
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Afpsraak formulier')
+            ->setFrom('info@servicetaxiflevoland.nl')
+            ->setTo('info@servicetaxiflevoland.nl')
+            ->setBody(
+                $this->renderView(
+                    'AppBundle:mails:appointment.html.twig',
+                    [
+                        'name' => $form->get('name')->getData(),
+                        'phone' => $form->get('phone')->getData(),
+                        'emailaddress' => $form->get('emailaddress')->getData(),
+                        'date' => $form->get('date')->getData(),
+                        'pickup_location' => $form->get('pickup_location')->getData(),
+                        'drop_location' => $form->get('drop_location')->getData(),
+                        'description' => $form->get('description')->getData(),
+                    ]
+                ),
+                'text/html'
+            );
+
+        /** @var \Swift_Mailer $mailer */
+        $mailer = $this->get('mailer');
+
+        $mailer->send($message);
     }
 }
