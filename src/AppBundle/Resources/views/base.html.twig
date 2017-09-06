@@ -18,7 +18,7 @@
     <body>
         {% include 'AppBundle:menu:menu.html.twig' %}
         {% if carousel is defined and carousel == true %}
-            {% include 'AppBundle:components:carousel.html.twig' %}
+            {#{% include 'AppBundle:components:carousel.html.twig' %}#}
         {% endif %}
         <div class="body-container">
             {% block body %}{% endblock %}

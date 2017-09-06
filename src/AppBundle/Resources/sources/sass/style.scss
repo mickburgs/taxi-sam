@@ -91,6 +91,7 @@ label, h1 {
   color: $white;
   max-width: 1005px;
   padding: 20px;
+  padding-top: 60px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -108,6 +109,14 @@ label, h1 {
 
 .main-text {
   margin-bottom: 30px;
+
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
 }
 
 .main-text-block {
