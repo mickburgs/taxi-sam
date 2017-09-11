@@ -6,6 +6,8 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    seo_title: Service Taxi Flevoland
+    seo_description: Service Taxi Flevoland is een jong, dynamisch en allround taxibedrijf, gevestigd in de Noordoostpolder van Flevoland. Onze professionele, klantvriendelijke chauffeurs hebben verschillende achtergronden in de taxibranche en jarenlang ervaring.
     locale: nl
 
 framework:
@@ -112,3 +114,19 @@ swiftmailer:
     username:  '%mailer_user%'
     password:  '%mailer_password%'
     auth_mode: '%mailer_auth_mode%'
+
+cmf_seo:
+    title: '%seo_title%'
+    description: '%seo_description%'
+    sitemap:
+        enabled: false
+    content_listener:
+        enabled: false
+
+sonata_seo:
+    page:
+        title: '%seo_title%'
+        metas:
+            name:
+                description: '%seo_description%'
+                keywords: taxi, flevoland, service, thuisbrengservice, vervoor, zakelijk, chaffeurs, koeriersdiensten, groepsvervoer
