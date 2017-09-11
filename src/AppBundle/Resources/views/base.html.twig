@@ -11,12 +11,13 @@
         <meta name="theme-color" content="#3694DE"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% stylesheets
-        '@AppBundle/Resources/public/vendor/bootstrap/dist/css/bootstrap.css'
-        '@AppBundle/Resources/public/vendor/components-font-awesome/css/font-awesome.css'
-        '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css'
-        '@AppBundle/Resources/public/css/style.css' %}
+        '@AppBundle/Resources/public/vendor/bootstrap/dist/css/bootstrap.min.css'
+        '@AppBundle/Resources/public/vendor/components-font-awesome/css/font-awesome.min.css'
+        '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'
+        '@AppBundle/Resources/public/css/style.min.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
+
         {% image '@AppBundle/Resources/public/images/favicon.ico' %}
         <link rel="icon" type="image/x-icon" href="{{ asset_url }}" />
         {% endimage %}
@@ -34,11 +35,11 @@
         </div>
         {% block javascripts %}
             {% javascripts
-            '@AppBundle/Resources/public/vendor/jquery/dist/jquery.js'
-            '@AppBundle/Resources/public/vendor/bootstrap/dist/js/bootstrap.js'
-            '@AppBundle/Resources/public/vendor/moment/min/moment-with-locales.js'
-            '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'%}
-            <script type="text/javascript" src="{{ asset_url }}"></script>
+            '@AppBundle/Resources/public/vendor/jquery/dist/jquery.min.js'
+            '@AppBundle/Resources/public/vendor/bootstrap/dist/js/bootstrap.min.js'
+            '@AppBundle/Resources/public/vendor/moment/min/moment-with-locales.min.js'
+            '@AppBundle/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}
+            <script type="text/javascript" src="{{ asset_url }}" ></script>
             {% endjavascripts %}
         {% endblock %}
         <script type="text/javascript">

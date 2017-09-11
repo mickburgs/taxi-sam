@@ -43,6 +43,13 @@ twig:
         - AppBundle:forms:_fields.html.twig
 
 assetic:
+#    node: /usr/local/bin/node
+#    filters:
+#      uglifyjs2:
+#        bin: node_modules/.bin/uglifyjs
+#      uglifycss:
+#        bin: node_modules/.bin/uglifycss
+#      cssrewrite: ~
     debug:          "%kernel.debug%"
     use_controller: false
     bundles:

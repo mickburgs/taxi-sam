@@ -2,6 +2,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bowercopy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -16,6 +17,17 @@ module.exports = function (grunt) {
         }
       }
     },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'src/AppBundle/Resources/public/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'src/AppBundle/Resources/public/css',
+          ext: '.min.css'
+        }]
+      }
+    },
     watch: {
       styles: {
         files: [
@@ -27,7 +39,7 @@ module.exports = function (grunt) {
   });
 
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'cssmin']);
   grunt.registerTask('default', ['build', 'watch']);
 
 };
