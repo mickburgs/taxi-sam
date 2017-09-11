@@ -1,7 +1,3 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
-
-sitemaps:
-    prefix: /sitemaps
-    resource: "@CmfSeoBundle/Resources/config/routing/sitemap.xml"

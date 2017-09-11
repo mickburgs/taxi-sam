@@ -7,7 +7,7 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     seo_title: Service Taxi Flevoland
-    seo_description: Service Taxi Flevoland is een jong, dynamisch en allround taxibedrijf, gevestigd in de Noordoostpolder van Flevoland. Onze professionele, klantvriendelijke chauffeurs hebben verschillende achtergronden in de taxibranche en jarenlang ervaring.
+    seo_description: Service Taxi Flevoland is een allround taxibedrijf, gevestigd in Flevoland. Onze chauffeurs hebben verschillende achtergronden in de taxibranche en jarenlang ervaring.
     locale: nl
 
 framework:

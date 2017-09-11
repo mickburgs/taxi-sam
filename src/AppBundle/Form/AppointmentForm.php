@@ -89,7 +89,6 @@ class AppointmentForm extends AbstractType
             ->add('save', SubmitType::class, array(
                 'label' => 'form.submit',
                 'attr' => array(
-                    'placeholder' => 'form.drop_location',
                     'class' => 'btn btn-default'
                 ),
             ));
