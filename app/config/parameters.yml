@@ -9,6 +9,6 @@ parameters:
     mailer_host: smtp.mail.pcextreme.nl
     mailer_port: 587
     mailer_user: info@servicetaxiflevoland.nl
-    mailer_password: Kunjedansen?1
+    mailer_password: 'Kunjedansen?1'
     mailer_auth_mode: login
     secret: ThisTokenIsNotSoSecretChangeIt
