@@ -27,11 +27,13 @@
     </head>
     <body>
         {% include 'AppBundle:menu:menu.html.twig' %}
-        {% if carousel is defined and carousel == true %}
-            {#{% include 'AppBundle:components:carousel.html.twig' %}#}
-        {% endif %}
         <div class="body-container">
-            {% block body %}{% endblock %}
+            {% if carousel is defined and carousel == true %}
+                {% include 'AppBundle:components:carousel.html.twig' %}
+            {% endif %}
+            <div class="body-text-container">
+                {% block body %}{% endblock %}
+            </div>
         </div>
         {% block javascripts %}
             {% javascripts output="js/js.min.js"

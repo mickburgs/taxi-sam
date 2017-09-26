@@ -9,7 +9,9 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="http://cdn-01.belfasttelegraph.co.uk/news/northern-ireland/article35579522.ece/c6cc3/AUTOCROP/w620h342/2016-02-06_new_16669318_I1.JPG" alt="first">
+            {% image '@AppBundle/Resources/public/images/header/2.webp' %}
+            <img class="flag" src="{{ asset_url }}" alt="first">
+            {% endimage %}
             {#<div class="carousel-caption">#}
                 {#<h3>Text1</h3>#}
                 {#<p>Hier nog iets</p>#}
@@ -17,7 +19,9 @@
         </div>
 
         <div class="item">
-            <img src="http://www.schipholtaxi.nl/wp-content/uploads/2013/04/IMG_5107-2-nr46-1080x410klein-1-e1465978449733.jpg" alt="second">
+            {% image '@AppBundle/Resources/public/images/header/3.webp' %}
+            <img class="flag" src="{{ asset_url }}" alt="second">
+            {% endimage %}
             {#<div class="carousel-caption">#}
                 {#<h3>Text2</h3>#}
                 {#<p>Hier nog iets</p>#}
@@ -25,7 +29,9 @@
         </div>
 
         <div class="item">
-            <img src="http://www.taxi-mta.nl/wp-content/uploads/2013/04/mtataxi-1.jpg" alt="third">
+            {% image '@AppBundle/Resources/public/images/header/4.webp' %}
+            <img class="flag" src="{{ asset_url }}" alt="third">
+            {% endimage %}
             {#<div class="carousel-caption">#}
                 {#<h3>Text3</h3>#}
                 {#<p>Hier nog iets</p>#}

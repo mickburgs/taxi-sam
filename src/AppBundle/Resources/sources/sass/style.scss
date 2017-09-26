@@ -2,6 +2,8 @@ $green: #008D88;
 $blue: #3694DE;
 $blue-alt: #5eabe8;
 $blue-dark: #303744;
+$main-border: #696d73;
+$body-bg: #344054;
 $blue-light: #83dbff;
 $white: white;
 $black: black;
@@ -24,6 +26,10 @@ label, h1 {
   background: $blue;
   border-color: $blue;
   margin-bottom: 0 !important;
+
+  .container-fluid {
+    max-width: 1025px;
+  }
 
   .nav-text {
     color: $white;
@@ -78,11 +84,15 @@ label, h1 {
 }
 
 .carousel-inner {
-  max-height: 300px;
+  max-width: 1005px;
+  margin: 0 auto;
 
   .item {
+    max-height: 300px;
+
     img {
       width: 100%;
+      transform: translateY(-40%);
     }
   }
 }
@@ -90,15 +100,22 @@ label, h1 {
 .body-container {
   color: $white;
   max-width: 1005px;
-  padding: 20px;
-  padding-top: 60px;
   margin: 0 auto;
+  margin-top: 90px;
   margin-bottom: 50px;
+  background-color: $body-bg;
+  border: solid $main-border;
+  border-radius: 5px;
+}
+
+.body-text-container {
+  display: inline-block;
+  padding: 20px;
 }
 
 .phone-link-container {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 40px;
 
   a, a:hover, a:visited, a:link, a:active {
@@ -156,6 +173,24 @@ label, h1 {
     .col-xs-12 {
       padding: 0;
     }
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .body-container {
+    margin-top: 0;
+    border: none;
+  }
+  .carousel-inner {
+    .item {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-inner {
+    height: 180px;
   }
 }
 

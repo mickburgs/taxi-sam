@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
+cp ~/domains/servicetaxiflevoland.nl/var/.htaccess ../.htaccess
+
 SYMFONY_ENV=prod composer install --no-dev --optimize-autoloader
 
-./clear_cache_prod.sh
+./resources/clear_cache_prod.sh
 
-cp ~/domains/servicetaxiflevoland.nl/var/.htaccess ../.htaccess
