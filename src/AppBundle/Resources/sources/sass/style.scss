@@ -9,6 +9,9 @@ $white: white;
 $black: black;
 $red: red;
 
+$facebook: #3b5998;
+$insta: #A1755C;
+
 body {
   background-color: $blue-dark;
 }
@@ -111,6 +114,7 @@ label, h1, h2, h3 {
 
 .body-text-container {
   display: inline-block;
+  margin-bottom: 50px;
   padding: 20px;
 }
 
@@ -153,19 +157,6 @@ label, h1, h2, h3 {
     }
   }
 
-  .icon-wrapper {
-    color: $blue-dark;
-    border-radius: 100%;
-    border: solid $blue 5px;
-    padding: 8px;
-    background: $blue;
-    width: 50px;
-    margin: 0 auto;
-    margin-bottom: -10px;
-    .icon {
-      font-size: 20px;
-    }
-  }
   .text {
     h2 {
       color: $blue;
@@ -173,6 +164,33 @@ label, h1, h2, h3 {
     ul {
       padding: 0;
       list-style: none;
+    }
+  }
+}
+
+.icon-wrapper {
+  color: $blue-dark;
+  border-radius: 100%;
+  border: solid $blue 5px;
+  padding: 8px;
+  background: $blue;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: -10px;
+
+  .icon {
+    font-size: 20px;
+  }
+
+  &.xl {
+    width: 75px;
+    height: 75px;
+    display: block;
+    position: relative;
+
+    .icon {
+      font-size: 40px;
+      position: absolute;
     }
   }
 }
@@ -202,6 +220,33 @@ label, h1, h2, h3 {
   .row {
     .col-xs-12 {
       padding: 0;
+    }
+  }
+}
+
+.social-wrapper {
+  float: right;
+
+  .facebook {
+    a {
+      border: solid $facebook 5px;
+      background: $facebook;
+      color: $white;
+    }
+    .icon {
+      left: 21px;
+      top: 14px;
+    }
+  }
+  .insta {
+    a {
+      border: solid $insta 5px;
+      background: $insta;
+      color: $white;
+    }
+    .icon {
+      left: 16px;
+      top: 12px;
     }
   }
 }
