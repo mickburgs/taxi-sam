@@ -17,3 +17,42 @@ form.pickup_location: Ophaal locatie
 form.drop_location: Afzet locatie
 form.description: Beschrijving
 form.submit: Verzenden
+
+text_block.service: Service
+text_block.street_taxi: Straat taxi
+text_block.car_home: Auto-thuisbrengservice
+text_block.hospital: Ziekenhuis vervoer
+text_block.airport: Luchthaven vervoer
+
+text_block.business_partner: Uw zakelijke partner
+text_block.business: Zakelijk vervoer
+text_block.groups: Groepsvervoer
+text_block.private: Prive chauffeurs
+text_block.courier: (Spoed) Koeriersdiensten
+
+general.call: Bel
+general.or_send_mail: of stuur een email naar
+general.ask_price: Vraag naar de voorwaarden en/of een vrijblijvende prijsopgave:
+
+main.text.one: Service Taxi Flevoland is een jong, dynamisch en allround taxibedrijf, gevestigd in de Noordoostpolder van Flevoland. Onze professionele, klantvriendelijke chauffeurs hebben verschillende achtergronden in de taxibranche en jarenlang ervaring. Vanaf september 2017 rijden wij voor u door heel Nederland en op verzoek zelfs daarbuiten. U kunt bij ons een luxe 4-persoons taxi reserveren of een 8-persoons taxi bus. Heeft u vervoer nodig naar bijvoorbeeld een luchthaven, ziekenhuis, restaurant of gezellig een dagje uit, wij staan met plezier 24/7 voor u klaar. Ook voor VIP- en directievervoer staat Service Taxi Flevoland garant. Wij vervoeren u, uw klanten of zakenrelaties met volledige service van A naar B.
+main.text.two: Reserveer hieronder direct uw rit.
+main.text.three: Voor speciale verzoeken, een vrijblijvende prijsopgave of meer informatie omtrent onze tarieven, neem gerust contact met ons op:
+
+service.title: Straattaxi / Ziekenhuis vervoer / Luchthaven vervoer
+service.text.one: U kunt ons 24 uur per dag en 7 dagen in de week bereiken voor het reserveren van uw rit. Ook rijden wij rond in de regio, staan bij NS stations en bekende winkelgebieden. U kunt ons hier altijd aanhouden wanneer u naar een door u gewenste bestemming vervoerd wilt worden.
+service.text.two: Van donderdag tot en met zondag zijn we te vinden rond de uitgaansgebieden in de regio, denk bijvoorbeeld aan Kampen, Harderwijk en Zwolle. Vaak staan we hier te wachten bij de daarvoor bestemde taxistandplaatsen. 
+
+service.car.one: Drankje op, laat je rijden…
+service.car.two: Wanneer u na een gezellige avond, de auto niet wilt laten staan? Bel Service Taxi Flevoland! Wij komen met twee chauffeurs, zodat niet alleen u veilig thuis gebracht wordt, maar ook uw auto.
+
+business.private.title: Zakelijk vervoer / Privé chauffeur
+business.private.one: Zoals onze naam al doet vermoeden, hebben wij service hoog in het vaandel staan.  Voor VIP-/ Directievervoer bent u bij ons dan ook aan het juiste adres. Wij vervoeren u of uw klanten / zakenrelaties heel comfortabel naar elke gewenste locatie. Binnen en buiten Nederland!
+business.private.two: Met alle privacy in onze Mercedes E-klasse of tot 8 personen in onze Mercedes Vito.
+business.private.three: Ook wanneer u een volledige dag een privé chauffeur nodig heeft, kunt u bij ons terecht. Wij zullen ervoor zorgen dat uw reis geheel naar wens verloopt. Desgewenst verwelkomt de chauffeur u met een ontbijt-/lunchpakket. Vanzelfsprekend ligt de krant naar keuze voor u klaar.
+business.private.four: Op aanvraag is de luxe auto voorzien van WIFI.
+business.private.five: Een privé chauffeur graag minimaal 24 uur voor vertrek reserveren.
+
+business.groups.one: Heeft u graag dat uw kinderen met extra aandacht en service naar school worden gebracht en uiteraard ook weer veilig thuis afgezet worden? Heeft u een bedrijfsuitje of wilt u graag een dagje uit met een groep vrienden? U kunt ons altijd bellen! Wij beschikken over een luxe bus voor 8 passagiers en een luxe auto met 4 zitplaatsen. Kortom, voor al uw gewenste soorten groepsvervoer is Service Taxi Flevoland de juiste keuze.
+business.groups.two: Groepsvervoer graag minimaal 24 uur voor vertrek reserveren.
+
+business.courier.one: Heeft u een pakketje of belangrijke documenten die zo snel als mogelijk bezorgd dienen te worden? Wij verzorgen het graag voor u en leveren het hoogst persoonlijk af bij de geadresseerde.

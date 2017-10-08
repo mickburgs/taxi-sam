@@ -1,0 +1,47 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:components:notifications.html.twig' %}
+
+    <div class="main-text">
+        <h1>{{ 'business.private.title'|trans }}</h1>
+
+        <p>{{ 'business.private.one'|trans }}</p>
+
+        <p>{{ 'business.private.two'|trans }}</p>
+
+        <p>{{ 'business.private.three'|trans }}</p>
+
+        <p>{{ 'business.private.four'|trans }}</p>
+
+        <p>{{ 'business.private.five'|trans }}</p>
+
+        <p>{{ 'general.ask_price'|trans }}</p>
+
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
+        <h1>{{ 'text_block.groups'|trans }}</h1>
+
+        <p>{{ 'business.groups.one'|trans }}</p>
+
+        <p>{{ 'business.groups.two'|trans }}</p>
+
+        <p>{{ 'general.ask_price'|trans }}</p>
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
+
+        <h1>{{ 'text_block.courier'|trans }}</h1>
+
+        <p>{{ 'business.courier.one'|trans }}</p>
+
+        <p>{{ 'general.ask_price'|trans }}</p>
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
+    </div>
+
+    {% include 'AppBundle:components:form.html.twig' %}
+
+{% endblock %}

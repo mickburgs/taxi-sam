@@ -1,0 +1,11 @@
+{% if sendForm == true %}
+    <div class="alert alert-success alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ 'make_appointment_success'|trans }}
+    </div>
+{% elseif formError == true %}
+    <div class="alert alert-danger alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ 'make_appointment_error'|trans }}
+    </div>
+{% endif %}

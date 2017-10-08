@@ -1,0 +1,27 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:components:notifications.html.twig' %}
+
+    <div class="main-text">
+        <h1>{{ 'service.title'|trans }}</h1>
+
+        <p>{{ 'service.text.one'|trans }}</p>
+
+        <p>{{ 'service.text.two'|trans }}</p>
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
+        <h1>{{ 'text_block.car_home'|trans }}</h1>
+
+        <p>{{ 'service.car.one'|trans }}</p>
+
+        <p>{{ 'service.car.two'|trans }}</p>
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
+    </div>
+
+    {% include 'AppBundle:components:form.html.twig' %}
+
+{% endblock %}

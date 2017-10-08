@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Translation\Translator;
 
@@ -16,6 +17,33 @@ class DefaultController extends Controller
      * @Route("/", name="homepage")
      */
     public function indexAction(Request $request)
+    {
+        return $this->controllerAction($request, 'AppBundle:default:index.html.twig');
+    }
+
+    /**
+     * @Route("/service", name="service")
+     */
+    public function serviceAction(Request $request)
+    {
+        return $this->controllerAction($request, 'AppBundle:default:service.html.twig');
+    }
+
+    /**
+     * @Route("/zakelijk", name="zakelijk")
+     */
+    public function businessAction(Request $request)
+    {
+        return $this->controllerAction($request, 'AppBundle:default:business.html.twig');
+
+    }
+
+    /**
+     * @param Request $request
+     * @param string $template
+     * @return Response
+     */
+    private function controllerAction(Request $request, $template)
     {
         $sendForm = false;
         $formError = false;
@@ -43,7 +71,7 @@ class DefaultController extends Controller
         }
 
         $this->getLang();
-        return $this->render('AppBundle:default:index.html.twig', [
+        return $this->render($template, [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
             'carousel' => true,
             'sendForm' => $sendForm,
@@ -52,6 +80,7 @@ class DefaultController extends Controller
             'form' => $form->createView(),
         ]);
     }
+
 
     /**
      * @Route("/taal/{lang}", name="language")

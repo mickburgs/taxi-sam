@@ -17,3 +17,42 @@ form.pickup_location: Pickup location
 form.drop_location: Drop location
 form.description: Description
 form.submit: Send
+
+text_block.service: Service
+text_block.street_taxi: Street taxi
+text_block.car_home: Car pick up service
+text_block.hospital: Hospital transportation
+text_block.airport: Airport transportation
+
+text_block.business_partner: Your business partner
+text_block.business: Business transportation
+text_block.groups: Group transport
+text_block.private: Private chauffeur
+text_block.courier: (Urgent) Courier services
+
+general.call: Please call
+general.or_send_mail: or send an email to
+general.ask_price: Ask for conditions and/or an obligation-free quotation:
+
+main.text.one: Service Taxi Flevoland is a young, dynamic and all-round taxi company, located in the North-East region of Flevoland. Our professional, customer-friendly drivers have different backgrounds in the taxi industry and many years of experience. From September 2017 on we offer a full range of service throughout the Netherlands and at your request even across the border. You can reserve a luxury 4-person taxi or 8-person taxi bus. Do you need transportation to and from an airport, hospital, restaurant or just enjoy a day out, we are on standby 24/7. Service Taxi Flevoland also offer VIP and executives transportation. We transport you, your customers or business partners with full service and a smile from A to B.
+main.text.two: Book directly below.
+main.text.three: For special requests, a free quotation or more information about our rates, please feel free to contact us:
+
+service.title: Street taxi / Hospital transportation / Airport transportation
+service.text.one: You can contact us 24 hours a day and 7 days a week to reserve your taxi . We can be found driving around in the region, we are located at NS stations and well-known shopping areas. You can always  approach us to take you to your desired destination.
+service.text.two: From Thursday to Sunday we are situated around the nightlife and entertainment areas in the region, for example, Kampen, Harderwijk and Zwolle. We are waiting at the designated taxi stands to offer you our full service.  
+
+service.car.one: It all happens to us ...
+service.car.two: After a pleasant day or evening out and about you may have consumed too many drinks to safely drive home. Don’t worry Service Taxi Flevoland has got you covered. Not only you but also your car will be taken to your desired destination. Please contact us for this special service. We dispatch two drivers, so that not only you but also your car gets home safely.
+
+business.private.title: Zakelijk vervoer / Privé chauffeur
+business.private.one: As our name suggests, we take service very seriously.  We transport you or your clients/business associates quite comfortable to any desired location throughout the Netherlands and at your request even across the border.
+business.private.two: Ensuring your privacy in our cars with passenger seats up to 8 people.
+business.private.three: When you desire a private chauffeur for the whole day we can provide this service for u. We will ensure you that your journey goes as smoothly as possible. If desired, the driver welcomes you with a breakfast and/or lunch and even the newspaper of your choice. 
+business.private.four: On request we offer free Wi-Fi Internet access.
+business.private.five: To reserve a private chauffeur please contact us at least 24 hours before your departure.
+
+business.groups.one: Do you wish to have your children taken to and from school with extra care and attention? Do you have a company outing or would you like to have a day out with a group of friends? You can always call us! We have a luxury bus for 8 passengers and a luxury car with 4 seats. In short, for all your desired types of group transportation Service Taxi Flevoland is the right choice.
+business.groups.two: Group transport please reserve at least 24 hours before departure.
+
+business.courier.one: Do you have a parcel or important documents that should be delivered as soon as possible? We will take care of it for you and deliver your parcel of documents personally to the addressee.

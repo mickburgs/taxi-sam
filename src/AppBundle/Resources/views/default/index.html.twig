@@ -1,18 +1,7 @@
 {% extends 'AppBundle::base.html.twig' %}
 
 {% block body %}
-    {% if sendForm == true %}
-        <div class="alert alert-success alert-dismissable fade in">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            {{ 'make_appointment_success'|trans }}
-        </div>
-    {% elseif formError == true %}
-        <div class="alert alert-danger alert-dismissable fade in">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            {{ 'make_appointment_error'|trans }}
-        </div>
-    {% endif %}
-
+    {% include 'AppBundle:components:notifications.html.twig' %}
 
     <div class="phone-link-container">
         <a class=phone-link href="tel:+31321340402"><i class="fa fa-phone" aria-hidden="true"></i> 0321 34 04 02</a>
@@ -20,25 +9,17 @@
 
     <div class="main-text">
         <p>
-            Service Taxi Flevoland is een jong, dynamisch en allround taxibedrijf, gevestigd in de
-            Noordoostpolder van Flevoland. Onze professionele, klantvriendelijke chauffeurs hebben
-            verschillende achtergronden in de taxibranche en jarenlang ervaring. Vanaf september 2017 rijden
-            wij voor u door heel Nederland en op verzoek zelfs daarbuiten. U kunt bij ons een luxe 4-persoons
-            taxi reserveren of een 8-persoons taxi bus. Heeft u vervoer nodig naar bijvoorbeeld een luchthaven,
-            ziekenhuis, restaurant of gezellig een dagje uit, wij staan met plezier 24/7 voor u klaar. Ook voor VIP-
-            en directievervoer staat Service Taxi Flevoland garant. Wij vervoeren u, uw klanten of zakenrelaties
-            met volledige service van A naar B.
+            {{ 'main.text.one'|trans }}
         </p>
         <p>
-            Reserveer hieronder direct uw rit.
+            {{ 'main.text.two'|trans }}
         </p>
         <p>
-            Voor speciale verzoeken, een vrijblijvende prijsopgave of meer informatie omtrent onze tarieven,
-            neem gerust contact met ons op:
+            {{ 'main.text.three'|trans }}
         </p>
-        <p>
-            Bel  <a href="tel:+31321340402">0321 – 34 04 02</a> of stuur een email naar <a href="mailto:info@servicetaxiflevoland.nl">info@servicetaxiflevoland.nl</a>
-        </p>
+
+        {% include 'AppBundle:components:contact.html.twig' %}
+
     </div>
 
     <div class="col-xs-12">
@@ -60,43 +41,41 @@
 
 
         <div class="col-sm-6 col-xs-12 main-text-block text-center">
-            <div class="icon-wrapper">
-                <i class="icon fa fa-users" aria-hidden="true"></i>
-            </div>
-            <div class="text">
-                <h2>Service</h2>
-                <ul>
-                    <li>Straat taxi</li>
-                    <li>Auto-thuisbrengservice</li>
-                    <li>Ziekenhuis vervoer</li>
-                    <li>Luchthaven vervoer</li>
-                </ul>
-            </div>
+            <a href="{{ path('service') }}">
+                <div class="icon-wrapper">
+                    <i class="icon fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h2>{{ 'text_block.service'|trans }}</h2>
+                    <ul>
+                        <li>{{ 'text_block.street_taxi'|trans }}</li>
+                        <li>{{ 'text_block.car_home'|trans }}</li>
+                        <li>{{ 'text_block.hospital'|trans }}</li>
+                        <li>{{ 'text_block.airport'|trans }}</li>
+                    </ul>
+                </div>
+            </a>
         </div>
 
         <div class="col-sm-6 col-xs-12 main-text-block text-center">
-            <div class="icon-wrapper">
-                <i class="icon fa fa-taxi" aria-hidden="true"></i>
-            </div>
-            <div class="text">
-                <h2>Uw zakelijke partner</h2>
-                <ul>
-                    <li>Zakelijk vervoor</li>
-                    <li>Groepsvervoer</li>
-                    <li>Prive chaffeurs</li>
-                    <li>(Spoed) Koeriersdiensten</li>
-                </ul>
-            </div>
+            <a href="{{ path('zakelijk') }}">
+                <div class="icon-wrapper">
+                    <i class="icon fa fa-taxi" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h2>{{ 'text_block.business_partner'|trans }}</h2>
+                    <ul>
+                        <li>{{ 'text_block.business'|trans }}</li>
+                        <li>{{ 'text_block.groups'|trans }}</li>
+                        <li>{{ 'text_block.private'|trans }}</li>
+                        <li>{{ 'text_block.courier'|trans }}</li>
+                    </ul>
+                </div>
+            </a>
         </div>
-
-
     </div>
 
-    <div class="col-xs-12 form">
-        <h1>{{ 'make_appointment'|trans }}</h1>
 
-        {{ form_start(form) }}
-        {{ form_end(form) }}
-    </div>
+    {% include 'AppBundle:components:form.html.twig' %}
 
 {% endblock %}
