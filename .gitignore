@@ -11,3 +11,4 @@ npm-debug.log
 /web/fonts
 /web/images
 /web/js
+.DS_Store
